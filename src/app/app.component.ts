@@ -12,10 +12,9 @@ ngOnInit(){
   }
   
  fas() {
-  var x = document.getElementsByClassName("input_form")[0];
-  var y=document.getElementsByClassName("addet_form")[0].innerHTML;
-
+  var x = document.getElementById("input_form").value;
+  document.getElementsByClassName("addet_form")[0].innerHTML+=x+"<br>";
   alert(x)
-  alert(y)
+  document.getElementById("input_form").value="";
 }
 }
