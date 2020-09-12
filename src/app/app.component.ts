@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   item:string="";
   items:string[]=[];
   i:number=0;
+  rrr:boolean=false
   
 constructor(){}
 ngOnInit(){}
@@ -19,10 +20,16 @@ added_item()
     this.items.push(this.item);
     alert(this.item);
     alert(this.i);
-    this.i=this.i+1;
     alert(this.items)
+    
   }
-  //remove_item(){
-    //alert(this.item);
-    //delete this.items[this.i]}
-}
+  remove_item(i){
+    alert(i);
+   this.items.splice(i,1)
+    }
+    edit_item(i){
+      alert(i);
+      
+    }
+  }
+ 

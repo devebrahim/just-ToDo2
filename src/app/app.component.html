@@ -9,10 +9,16 @@
         </div>
     </div>
     <a href="# ">
-        <div id="demo " class="addet_form " *ngFor="let item of items;let i =index ">{{item}}
-            <button>
-                </button>
-        </div>
 
+        <div id="demo " class="addet_form " *ngFor="let item of items;let i =index">
+            <div class="added_form-text">
+                <div class="square"></div>{{item}}
+                <input type="text" hidden>
+            </div>
+            <div class="added_form-buttons">
+                <button (click)=remove_item(i)>d</button>
+                <button (click)=edit_item(i)>e</button>
+            </div>
+        </div>
     </a>
 </div>
