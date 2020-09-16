@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import{ FormControl } from '@angular/forms';  
+import { css } from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +10,17 @@ import{ FormControl } from '@angular/forms';
 export class AppComponent implements OnInit{
   title = 'JustToDo';
   item:string="";
-  items:string[]=[];
+  items:any[]=[this.title];
   i:number=0;
-  rrr:boolean=false
-  
+  changeText:boolean=true;
+  funcEdit:boolean=true
+
 constructor(){}
 ngOnInit(){}
+
 added_item()
   {
     this.items.push(this.item);
-    alert(this.item);
-    alert(this.i);
     alert(this.items)
     
   }
@@ -29,7 +30,5 @@ added_item()
     }
     edit_item(i){
       alert(i);
-      
     }
   }
- 

@@ -52,49 +52,68 @@
                 }
                 
                 .addet_form {
-                    width: 40%;
+                    width: 545px;
                     height: 50px;
                     margin-top: 15px;
                     margin-left: auto;
                     margin-right: auto;
                     border-radius: 2px;
                     border: 1px solid #2c3e50;
-                    background-color: aqua;
                     padding-left: 15px;
                     display: flex;
                     font-size: 18px;
                 }
                 
+                .added_form-text {
+                    width: 160px;
+                    display: flex;
+                    background-color: aqua;
+                }
+                
+                .added_form-text input {
+                    width: 150px;
+                    border: 3px solid red;
+                    margin-top: 5px;
+                }
+                
                 .square {
                     width: 25px;
                     height: 25px;
-                    //background-color: gray;
+                    background-color: gray;
                     border-radius: 3px;
                     margin-right: 7px;
                     margin-top: 10px;
                 }
                 
-                .added_form-text {
-                    background-color: blue;
-                    width: 100px;
+                .added_form-text_item {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 10px;
                 }
                 
                 .added_form-buttons {
+                    width: 100%;
+                }
+                
+                #btn_remove {
+                    opacity: .2;
                     background-color: red;
-                    float: right;
-                    margin-right: 0px;
-                    right: 0;
-                    position: relative;
-                    left: 0;
+                }
+                
+                #btn_remove:hover,
+                #btn_edit:hover {
+                    opacity: 1;
+                }
+                
+                #btn_edit {
+                    opacity: .2;
+                    background-color: yellow;
                 }
                 
                 .addet_form button {
                     width: 35px;
                     height: 35px;
-                    background-color: chartreuse;
                     float: right;
                     margin-right: 5px;
                     margin-top: 7px;
-                    position: relative;
-                    right: 0;
                 }
